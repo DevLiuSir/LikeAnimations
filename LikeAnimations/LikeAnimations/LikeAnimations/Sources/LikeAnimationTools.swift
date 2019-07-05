@@ -8,24 +8,22 @@
 
 import UIKit
 
+/// 点赞动画工具类
 struct LikeAnimationTools {
     
-    //自定义图片的名字
+    /// 自定义图片的名字
     static private let imageNanme = "likeHeart"
-    //自定义图片的宽度
+    /// 自定义图片的宽度
     static private let width = 80
-    //自定义图片的高度
+    /// 自定义图片的高度
     static private let height = 80
     
     /// 系统的触摸事件 touch
     ///
     /// - Parameter touches:
     static func startWithTouch(_ touches: Set<UITouch>) {
-        
         guard let touch = (touches as NSSet).anyObject() as? UITouch else {return}
-        
         guard touch .tapCount > 0 else {return}
-        
         let point = touch.location(in: touch.view)
         let image = UIImage(named: imageNanme)
         let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: width, height: height))
