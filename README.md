@@ -14,7 +14,7 @@
 ## Screencast
 
 <p align="center"> 
-<img  src="https://github.com/ChinaHackers/LCWaveView/raw/master/Design/show.gif" width="391" height="795"></p>
+<img  src="https://github.com/ChinaHackers/LikeAnimations/raw/master/Design/show.gif" width="391" height="795"></p>
 
 
 
