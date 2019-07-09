@@ -37,7 +37,7 @@ class LikeAnimationView: UIView {
     }
     
     /// 三角形 圆圈颜色 (默认为: 红色)
-    var shapeFillColor: UIColor = UIColor.red {
+    var shapeFillColor: UIColor = UIColor.systemRed {
         didSet {
             
         }
@@ -53,7 +53,7 @@ class LikeAnimationView: UIView {
     
     /// 取消点赞图片
     private lazy var cancelLikeImgView : UIImageView = {
-        let imageView = UIImageView(image: UIImage(named:"ic_home_like_before"))
+        let imageView = UIImageView(image: UIImage(named:"icon_home_like_before"))
         imageView.frame = CGRect(x: 0, y: 0, width: imagWidth, height: imagWidth)
         imageView.tag = LikeType.CancelLikeType.rawValue
         imageView.isUserInteractionEnabled = true
@@ -66,7 +66,7 @@ class LikeAnimationView: UIView {
     
     /// 点赞图片
     private lazy var giveLikeImgView : UIImageView = {
-        let imageView = UIImageView(image: UIImage(named:"ic_home_like_after"))
+        let imageView = UIImageView(image: UIImage(named:"icon_home_like_after"))
         imageView.frame = CGRect(x: 0, y: 0, width: imagWidth, height: imagWidth)
         imageView.tag = LikeType.GiveLikeType.rawValue
         imageView.isHidden = true                   // 默认隐藏: 未点赞状态

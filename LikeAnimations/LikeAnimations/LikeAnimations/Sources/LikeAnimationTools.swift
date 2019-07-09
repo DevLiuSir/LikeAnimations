@@ -12,7 +12,7 @@ import UIKit
 struct LikeAnimationTools {
     
     /// 自定义图片的名字
-    static private let imageNanme = "likeHeart"
+    static private let imageNanme = "icon_home_biglike"
     /// 自定义图片的宽度
     static private let width = 80
     /// 自定义图片的高度
